@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from './Components/Home/Home/Home';
+import Login from './Components/Login/Login'
 export const UserContext = createContext();
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
         <Switch>
           <Route path="/home">
             <Home></Home>
+            </Route>
+            <Route path="/login">
+            <Login></Login>
           </Route>
          
           <Route exact path="/">
